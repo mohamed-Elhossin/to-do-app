@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container mt-3 col-md-6">
+        <div class="card">
+            <div id="validationMessage" class="none alert alert-danger">
+                <button id="closeValidationMessageBtn" type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for=""> Task Name</label>
+                    <input id="taskInput" type="text" class="form-control" placeholder="Your Task Name">
+                    <div id="validationMessage" class="none alert alert-danger">
+                        <button id="closeValidationMessageBtn" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=""> Task Image</label>
+                    <input id="taskInput" type="text" class="form-control" placeholder="Your Task Image">
+                    <div id="validationMessage" class="none alert alert-danger">
+                        <button id="closeValidationMessageBtn" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for=""> Task Date</label>
+                    <input id="taskInput" type="date" class="form-control" placeholder="Your Task">
+              
+                </div>
+                <button id="addTaskBtn" class="btn btn-info"> Add Task </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 col-md-6">
+        <h1 class="text-center"> List Tasks </h1>
+        <div class="card">
+            <div class="card-body">
+                <div id="allTasks" class="allTasks">
+
+                </div>
+                <div id="noTask" class="alert alert-danger">
+                    <h3 class="text-center"> No Tasks Added yet </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
